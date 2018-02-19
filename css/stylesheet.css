@@ -1,0 +1,384 @@
+/*-----universal-----*/
+body, html {
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  margin:0;
+  padding:0;
+  height:100%;
+  background-color:#000000;
+  color: #ffffff;
+  font-size:16px;
+  line-height:1.5em;
+  box-sizing: border-box;
+}
+
+head {
+  display:none;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+* {
+  display: block;
+  -webkit-font-smoothing: antialiased;
+}
+
+div {
+  display:block;
+}
+
+ul {
+  margin:0;
+  padding: 0;
+}
+.divider {
+  display: block;
+  width: 200px;
+  background-color: #FFD700;
+  height:2px;
+  margin:15px 0;
+}
+h1 {
+  text-align: center;
+  font-family:'Caveat', cursive;
+  font-size: 2em;
+}
+input {
+  align: left;
+}
+
+/*Back to top code*/
+.dev-img2 {
+  padding: 5px;
+}
+.backto {
+  position: absolute;
+  right:0;
+  width:auto;
+  margin: -15px 45px;
+  padding: 10px 20px;
+  color:#FFD700;
+}
+.backto:hover {
+  color:#ffffff;
+}
+.dev-size {
+  font-size: 1.5em;
+}
+/*.top-page {                 making height 100% for html with a class??*/
+  /*height:100% !important;*/
+
+/*.skills-img {
+  background: linear-gradient(rgba(255, 215, 0, .25), rgba(255, 215, 0, .1)),
+  url('../img/img.jpg') no-repeat fixed;
+  background-size:cover;
+  background-position: center;
+  text-align: center;
+  color:#ffffff;
+}*/
+/* sections and containers of divs */
+.section {
+width: 100%;
+padding:0;
+height:auto;
+position: relative;
+overflow: hidden;
+color: #ffffff;
+}
+/* header + navigation */
+
+.head-container {
+  width:100%;
+  overflow: hidden;
+  margin:auto;
+  border-bottom: #FFD700 2px solid;
+  min-height: 75px;
+}
+
+#heading {
+  float: left;
+  margin-left: 50px;
+  margin-top :5px;
+}
+
+#heading h1{
+  font-size: 1.75em;
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.15em;
+}
+
+header nav {
+  float: right;
+  margin-top: 25px;
+  font-size:1.15em;
+}
+header nav li {
+  display: inline;
+  float: left;
+  padding: 0 30px 0 30px;
+}
+
+header a:hover, .social a:hover {
+  font-weight: bold;
+  color:#FFD700;
+}
+
+/* showcase img section */
+.showcase-img {
+  min-height: 35em;
+  background: /*linear-gradient(rgba(255, 215, 0, .25), rgba(255, 215, 0, .1)*/linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+  url('../img/showcase.jpg') no-repeat;
+  background-size:100% 130%; /*instead of cover */
+  background-position: center;
+  text-align: center;
+  color:#ffffff;
+  text-shadow: -1px 0 #1d2731, 0 1px #1d2731, 1px 0 #1d2731, 0 -1px #1d2731;
+}
+#showcase-section h1 {
+  font-size:3.75em;
+}
+
+/* about me section */
+#about-section {
+  border-top: #FFD700 2px solid;
+  padding-bottom: 25px;
+}
+
+#about-divider {
+  vertical-align: middle;
+  display: inline-block;
+}
+.about-wrapper h2 {
+  font-size: 1.25em;
+}
+.about-wrapper{
+  text-align:center;
+}
+.about-img {
+  display:flex;
+  flex:wrap;
+  width:100%;
+}
+.about-p {
+  float: left;
+  padding: 30px 40px 30px 40px;
+  width: 50%;
+}
+.about-image {
+  width: 50%;
+}
+.about-image img {
+  margin-left: auto;
+	margin-right: auto;
+	display: block;
+  padding-top: 25px;
+}
+/* skill section */
+#skills-section {
+  background-color:#FFD700;
+  color:#000000;
+  border-top:black 10px solid;
+  flex-flow: column wrap;
+}
+#skills-section h1, #skills-section h2 {
+  text-align:center;
+  font-size: 1.75em;
+}
+.skills-container-flex {
+min-height: 150px;
+
+}
+
+.dev-sq {
+  display:inline-block;
+  border: 2px solid #000000;
+  text-align: center;
+  padding:5px;
+}
+.tools-container {
+  float: right;
+}
+.flex-item {
+  width: 50%;
+  display:inline-block;
+}
+.skills-divider {
+  width: 200px;
+  background-color: #000000;
+  height:2px;
+  margin:-30px 0px 10px 10px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.skills-head {
+  text-align: center;
+}
+.dev-img {
+  margin-right: 10px;
+}
+
+/* Portfolio section */
+.portfolio-container {
+  width: 100%;
+  display:flex;
+  flex:wrap;
+}
+.project-title {
+  width: 50%;
+  text-align:center;
+}
+.project-image {
+  margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.portfolio-head {
+  text-align: center;
+  font-size: 1.5em;
+  position:relative;
+}
+
+.portfolio-divider {
+display: inline-block;
+vertical-align: middle;
+}
+
+/*
+.portfolio-divider {
+  width:100%;
+}
+.portfolio-row {
+  text-align: center;
+}
+.project-img {
+  margin-left: 27%;
+}
+*/
+
+/*contact section */
+#contact-section {
+  border-top: #FFD700 2px solid;
+}
+.content-container {
+  background-color:#FFD700;
+  text-align:left;
+  color: #000000;
+  padding-top: 40px;
+padding-bottom: 40px;
+width:100%;
+display: flex;
+flex:wrap;
+}
+/*
+#contact-form input, .form-item textarea {
+  margin-right:auto;
+  margin-left: auto;
+  display:block;
+}
+*/
+.center-heading {
+  position: relative;
+}
+.form-div {
+width: 70%;
+padding: 10px;
+background: #ffffff;
+text-align: center;
+margin:auto;
+border: 2px solid #000000;
+}
+#contact-form input {
+  height: 40px;
+  font-size: 1.25em;
+  margin:auto;
+  border: 1px solid #000000;
+}
+#contact-form label {
+  font-size: 1.35em;
+}
+.form-item {
+  padding-bottom: 10px;
+}
+.form-item textarea {
+  font-size:1.25em;
+  height: 70px;
+  width:60%;
+  margin:auto;
+  border: 1px solid #000000;
+}
+#submit-btn {
+  width:15%;
+}
+
+/* Footer */
+.footer-head p {
+  text-align: center;
+  font-size: 1.25em;
+}
+.social-div {
+  font-size: 1.25em;
+  width: 100%;
+  padding:1.5%;
+}
+.s-item {
+  padding:10px;
+  width: 33%;
+  display:inline;
+}
+.social-div li a {
+  text-decoration: none;
+  color:#ffffff;
+  display: -webkit-inline-box;
+}
+.social-img {
+  padding:5px;
+}
+.social {
+  width: 50%;
+  margin:auto;
+  text-align: center;
+}
+.move-img {
+  padding: 2px;
+}
+/*******Media Queries*******/
+@media only screen and (max-width:30em) {
+  #heading h1 {
+    padding-left: 60px;
+  }
+  #showcase-section h1 {
+    font-size: 3em;
+  }
+  .showcase-img {
+    min-height: 20em;
+  }
+  .skills-head {
+    min-height: 18em;
+  }
+  .dev-sq {
+    margin: 3px;
+  }
+  .backto {
+    position: relative;
+    text-align: center;
+  }
+  .social-div {
+    display:block;
+  }
+}
+
+@media only screen and (min-width: 30em) and (max-width:48em) {
+
+
+}
+
+@media only screen and (min-width:48em) {
+
+
+}
