@@ -130,8 +130,7 @@ header a:hover, .social a:hover {
 /* showcase img section */
 .showcase-img {
   min-height: 35em;
-  background: /*linear-gradient(rgba(255, 215, 0, .25), rgba(255, 215, 0, .1)*/linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
-  url('../img/showcase.jpg') no-repeat;
+  background: url('../img/showcase.JPG') no-repeat;
   background-size:100% 130%; /*instead of cover */
   background-position: center;
   text-align: center;
